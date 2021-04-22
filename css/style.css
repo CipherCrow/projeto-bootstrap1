@@ -33,6 +33,7 @@ a{text-decoration: none;color: initial;}
 	background-size: cover;
 	background-position: center;
 	position: relative;
+	background-attachment: fixed;
 }
 .cover-bg{
 	width: 100%;
@@ -40,10 +41,35 @@ a{text-decoration: none;color: initial;}
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	background-color: rgba(0,0,0,.45);
+	background-color: rgba(0,0,0,.60);
 	z-index: 0;
 }
 .fix-zIndex{
 	position: relative;
 	z-index: 1;
+}
+.bg-linha{
+	padding: 10% 0;
+	color: white;
+}
+.bg-linha > div{
+	padding: 0 20px;
+}
+.sub-text{
+	color: #E0E0E0;
+	font-weight: lighter;
+}
+.t-shadow{
+	text-shadow: 0 2px 3px rgba(0,0,0,.9);
+}
+.form-text{
+	color: #BDBDBD;
+}
+@media screen and (max-width: 500px){
+	.bg-linha{
+		text-align: center;
+	}
+	.bg-linha > div:last-child{
+		padding-top: 10px;
+	}
 }
