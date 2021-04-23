@@ -65,6 +65,39 @@ a{text-decoration: none;color: initial;}
 .form-text{
 	color: #BDBDBD;
 }
+		/*chamada*/
+
+#chamada{
+	background-color: #212529;
+	padding: 8px 0;
+	color: white;
+}
+#chamada h2{
+	font-size: 36px;
+}
+		/*Sobre*/
+#sobre{
+	padding: 30px 0;
+	background-color: rgba(111,111,111,.5);
+}
+.custom-title{
+	position: relative;
+}
+.custom-title h2{
+	color: #888 !important;
+	font-size: 25px !important;
+}
+.custom-title div{
+	position: absolute;
+	left: 0;
+	top: -4px;
+	width: 120px;
+	height: 4px;
+	background-color: #212529;
+}
+
+/*Responsivo*/
+
 @media screen and (max-width: 500px){
 	.bg-linha{
 		text-align: center;

@@ -15,7 +15,7 @@
 	<link rel="manifest" href="/site.webmanifest">
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/bootstrap-icons.css">
+	<link rel="stylesheet" href="css/all.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -33,10 +33,10 @@
 					<a class="nav-link active" aria-current="page" href="#">Home</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Sobre</a>
+					<a class="nav-link" href="#sobre">Sobre</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contato</a>
+					<a class="nav-link" href="#contato" tabindex="-1" aria-disabled="true">Contato</a>
 				</li>
 			</ul>
 		</div><!-- navbar -->
@@ -69,9 +69,55 @@
 			</div><!-- linha -->
 		</div><!-- container -->
 	</section>
+
+	<section id="chamada">
+		<div class="container">
+			<h2 class="text-center"><i class="fa fa-arrow-down" aria-hidden='true'></i></h2>
+		</div><!-- container -->
+	</section> <!-- chamada -->
+
+	<section id="sobre">
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-md-12">
+
+					<div class="custom-title">
+						<div></div>
+						<h2>Sobre</h2>
+					</div> <!-- titulo -->
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fringilla sollicitudin massa vitae efficitur. Aenean sagittis sollicitudin erat, at molestie nibh facilisis at. Vestibulum quis malesuada odio. Donec ac porttitor metus, sed viverrat, at molestie nibh facilisis at. Vestibulum quis malesuada odio. Donec ac porttitor metus, sed viverra dui. at molestie nibh facilisis at. Vestibulum quis malesuada odio. Donec ac porttitor metus, sed viverra dui.</p>
+					<div class="text-center">
+						<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+						  Saiba Mais
+						</button>
+					</div>
+
+				</div>
+			</div> <!-- linha -->
+			<!-- Botão de ativar modal-->
+			<!-- Modal -->
+			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Minha história</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fringilla sollicitudin massa vitae efficitur. Aenean sagittis sollicitudin erat, at molestie nibh facilisis at. Vestibulum quis malesuada odio. Donec ac porttitor metus, sed viverra dui. Etiam semper, quam id vestibulum dignissim, neque est egestas orci, sed fermentum enim velit sit amet purus.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div><!-- container -->
+	</section> <!-- sobre -->
+
+
+
 </div>
-
-
   	<!-- jquery, frameworks -->
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
