@@ -100,18 +100,67 @@ a{text-decoration: none;color: initial;}
 #diferenciais{
 	padding: 40px 0; 
 }
+#diferenciais .diferenciais-wrapper{
+	padding: 40px 0;
+}
 .single-diferencial{
-	padding: 0 30px;
+	padding: 0 20px;
 }
 .single-diferencial h2{
-	font-size: 50px;
 	padding-bottom: 3px;
 	border-bottom: 5px dotted #ccc;
+}
+.single-diferencial i{
+	font-size: 65px;
+	padding-bottom: 5px;
 }
 .texto{
 	color: #38383a !important;
 }
-
+	/*convite*/
+#convite{
+	padding: 15px 0;
+	background-color: rgba(111,111,111,.5);
+}
+#convite h2{
+	font-size: 30px;
+	color: white;
+}
+#convite input{
+	width: calc(90% - 60px);
+}
+#convite button{
+	border-top-left-radius: 0;
+	border-top-left-radius: 0;
+}
+	/*contato*/
+#contato{
+	padding: 30px 0;
+	background-color: rgb(225,225,225);
+}
+#contato form .form-group{
+	margin: 10px 0;
+}
+.formulario-contato{
+	padding: 30px 0;
+}
+	/*Footer*/
+footer{
+/*	background-color: #212529;*/
+	padding: 30px 0;
+	color: white;
+}
+footer ul{
+	list-style: none;
+	list-style-position: inside;
+	padding-left: 0;
+}
+footer ul a{
+	color: rgba(255,255,255,.55);
+}
+footer ul a:hover{
+	color: white;
+}
 /*Responsivo*/
 
 @media screen and (max-width: 500px){

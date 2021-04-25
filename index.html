@@ -7,7 +7,7 @@
 	<meta name="description" content="Projeto de site estático utilizando o framework bootstrap">
 	<meta name="keywords" content="treinando,framework,html,css,js,bootstrap">
 
-	<title>Boots in the traps</title>
+	<title>Boots InThe Traps</title>
 
 	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
@@ -23,7 +23,7 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4 fixed-top">
 	<div class="container-xxl">
 
-		<a class="navbar-brand" href="#">Boots in the Trap</a>
+		<a class="navbar-brand" href="#">Boots InThe Traps</a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -33,10 +33,10 @@
 					<a class="nav-link active" aria-current="page" href="#">Home</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#sobre">Sobre</a>
+					<a class="nav-link" aria-current="page" href="#sobre">Sobre</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#contato" tabindex="-1" aria-disabled="true">Contato</a>
+					<a class="nav-link" aria-current="page" href="#contato" >Contato</a>
 				</li>
 			</ul>
 		</div><!-- navbar -->
@@ -128,8 +128,12 @@
 
 				</div> <!-- linha coluna -->
 
+			</div> <!-- linha titulo -->
+
+			<div class="row diferenciais-wrapper">
+
 				<div class="col-md-4 text-center single-diferencial">
-					<h2><i class="fa fa-user"></i></h2>
+					<h2><i class="fa fa-user" aria-hidden='true'></i></h2>
 					<p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fringilla sollicitudin massa vitae efficitur. Aenean sagittis sollicitudin erat, at molestie nibh facilisis at. Vestibulum quis malesuada odio. Donec.</p>
 				</div> <!-- single-diferencial -->
 
@@ -143,11 +147,86 @@
 					<p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fringilla sollicitudin massa vitae efficitur. Aenean sagittis sollicitudin erat, at molestie nibh facilisis at. Vestibulum quis malesuada odio. Donec.</p>
 				</div> <!-- single-diferencial -->
 
-			</div> <!-- linha -->
+			</div> <!--linha conteudo wrappe -->
+
 		</div> <!-- container -->
 	</section><!-- diferenciais -->
 
+	<section id="convite">
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-md-6 text-center">
+					<h2><i class="fas fa-bell"></i> Entre para nossa lista!</h2>
+				</div> <!-- cta -->
 
+				<div class="col-md-6 text-center">
+					<form>
+						<div class="form-group">
+							<input type="email"><button type="submit" class="btn btn-secondary">Entrar!</button>
+						</div>
+					</form>
+				</div> <!-- form -->
+
+			</div> <!-- linha -->
+		</div><!-- container -->
+	</section><!-- convite -->
+
+	<section id="contato">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-12">
+					<div class="custom-title">
+						<div></div>
+						<h2>Entre em contato!</h2>
+					</div> <!-- titulo -->
+				</div> <!--titulo coluna -->	
+
+			</div><!-- linha -->
+
+			<div class="row d-flex justify-content-center formulario-contato">
+				<div class="col-md-10 ">
+					<form>
+						<div class="form-group">
+							<label for="nomecontato">Nome Completo</label>
+							<input type="text" id="nomecontato" class="form-control">
+						</div> <!-- formgroup -->
+
+						<div class="form-group">
+							<label for="emailcontato">Endereço de E-mail</label>
+							<input type="email" id="emailcontato" class="form-control">
+						</div> <!-- formgroup -->
+
+						<div class="form-group">
+							<label for="msgcontato">Sua mensagem</label>
+							<textarea id="msgcontato" placeholder="Mensagem" class="form-control"></textarea>
+						</div> <!-- formgroup -->
+
+						<button type="submit" class="btn-secondary btn">Enviar!</button>
+					</form>
+				</div> <!-- md12 -->
+			</div> <!-- coluna form -->
+
+		</div><!-- container -->
+	</section> <!-- contato -->
+	<footer class="bg-dark">
+		<div class="container">
+			<div class="row d-flex align-items-center justify-content-between">
+				<div class="col-md-4 text-center">
+					<h2>Links úteis</h2>
+					<ul>
+						<li><a href="">link 1</a></li>
+						<li><a href="">link 2</a></li>
+						<li><a href="">link 3</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4 text-center">
+					<p>Todos os direitos reservados? &copy</p>
+				</div>
+			</div>
+		</div>
+	</footer>
 </div> <!-- box -->
   	<!-- jquery, frameworks -->
 	<script src="js/jquery.js"></script>
