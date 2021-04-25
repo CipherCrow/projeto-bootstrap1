@@ -28,7 +28,7 @@ a{text-decoration: none;color: initial;}
 }
 .bg-top{
 	width: 100%;
-	min-height: 500px;
+	min-height: calc(100vh - (56px + 59.2px));
 	background-image: url('../images/rain.jpg');
 	background-size: cover;
 	background-position: center;
@@ -82,23 +82,52 @@ a{text-decoration: none;color: initial;}
 }
 .custom-title{
 	position: relative;
+	padding-bottom: 10px;
 }
 .custom-title h2{
-	color: #888 !important;
+	/*color: #888*/;
 	font-size: 25px !important;
 }
 .custom-title div{
 	position: absolute;
 	left: 0;
-	top: -4px;
-	width: 120px;
+	top: -8px;
+	width: 8%;
 	height: 4px;
 	background-color: #212529;
+}
+	/*Diferenciais*/
+#diferenciais{
+	padding: 40px 0; 
+}
+.single-diferencial{
+	padding: 0 30px;
+}
+.single-diferencial h2{
+	font-size: 50px;
+	padding-bottom: 3px;
+	border-bottom: 5px dotted #ccc;
+}
+.texto{
+	color: #38383a !important;
 }
 
 /*Responsivo*/
 
 @media screen and (max-width: 500px){
+	.custom-title{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.custom-title div{
+		width: 25%;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.texto{
+		text-align: center;
+	}
 	.bg-linha{
 		text-align: center;
 	}
